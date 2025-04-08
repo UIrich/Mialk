@@ -1,12 +1,12 @@
 /* Fontes */
 @font-face {
     font-family: 'Meowtalk';
-    src: url(fonts/Meowtalk.otf);
+    src: url(./fonts/Meowtalk.otf);
 }
 
 @font-face {
     font-family: 'CuteEaster';
-    src: url(fonts/CuteEaster.otf);
+    src: url(./fonts/CuteEaster.otf);
 }
 
 /* Estilos Gerais */
