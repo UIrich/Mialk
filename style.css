@@ -1,3 +1,14 @@
+/* Fontes */
+@font-face {
+    font-family: 'Meowtalk';
+    src: url(fonts/Meowtalk.otf);
+}
+
+@font-face {
+    font-family: 'CuteEaster';
+    src: url(fonts/CuteEaster.otf);
+}
+
 /* Estilos Gerais */
 body {
     font-family: 'Comic Neue', cursive, sans-serif;
@@ -29,9 +40,10 @@ body {
 }
 
 .logo-nav {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
+    font-family: 'CuteEaster';
+    letter-spacing: 0.1rem;
     color: white;
-    font-weight: bold;
 }
 
 .nav-links {
@@ -253,6 +265,8 @@ body {
 }
 
 .produto h3 {
+    font-family: 'Meowtalk';
+    font-size: 1.4rem;
     color: #d14d7a;
     margin: 0 0 10px;
 }
