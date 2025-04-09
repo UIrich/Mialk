@@ -45,35 +45,67 @@ function initMenu() {
 document.addEventListener('DOMContentLoaded', initMenu);
 
 document.addEventListener('DOMContentLoaded', function() {
-    const items = document.querySelectorAll('.carrossel-item');
+    const carrosselItems = document.querySelectorAll('.carrossel-item');
     const indicadores = document.querySelectorAll('.indicador');
     const prevBtn = document.querySelector('.prev');
     const nextBtn = document.querySelector('.next');
     let currentIndex = 0;
-    
-    function showItem(index) {
-        items.forEach(item => item.classList.remove('active'));
+
+    function updateCarrossel() {
+        // Remove todas as classes active
+        carrosselItems.forEach(item => item.classList.remove('active'));
         indicadores.forEach(ind => ind.classList.remove('active'));
         
-        items[index].classList.add('active');
-        indicadores[index].classList.add('active');
-        currentIndex = index;
+        // Adiciona active no item atual
+        carrosselItems[currentIndex].classList.add('active');
+        indicadores[currentIndex].classList.add('active');
+        
+        // Atualiza cores dos controles baseado no mascote ativo
+        updateControlsColor();
     }
-    
-    // Event listeners
-    prevBtn.addEventListener('click', () => {
-        let newIndex = (currentIndex - 1 + items.length) % items.length;
-        showItem(newIndex);
-    });
-    
-    nextBtn.addEventListener('click', () => {
-        let newIndex = (currentIndex + 1) % items.length;
-        showItem(newIndex);
-    });
-    
+
+    function updateControlsColor() {
+        const activeItem = document.querySelector('.carrossel-item.active');
+        const controls = document.querySelectorAll('.carrossel-controle');
+        
+        if (activeItem.id === 'morango-mascote') {
+            controls.forEach(control => {
+                control.style.backgroundColor = 'var(--rosa-forte)';
+                control.style.boxShadow = '0 3px 10px rgba(209, 77, 122, 0.3)';
+            });
+        } else if (activeItem.id === 'cappuccino-mascote') {
+            controls.forEach(control => {
+                control.style.backgroundColor = 'var(--cappuccino)';
+                control.style.boxShadow = '0 3px 10px rgba(156, 101, 47, 0.3)';
+            });
+        } else if (activeItem.id === 'baunilha-mascote') {
+            controls.forEach(control => {
+                control.style.backgroundColor = 'var(--baunilha)';
+                control.style.boxShadow = '0 3px 10px rgba(100, 136, 172, 0.3)';
+            });
+        }
+    }
+
+    // Navegação por indicadores
     indicadores.forEach((indicador, index) => {
         indicador.addEventListener('click', () => {
-            showItem(index);
+            currentIndex = index;
+            updateCarrossel();
         });
     });
+
+    // Botão anterior
+    prevBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + carrosselItems.length) % carrosselItems.length;
+        updateCarrossel();
+    });
+
+    // Botão próximo
+    nextBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % carrosselItems.length;
+        updateCarrossel();
+    });
+
+    // Inicializa o carrossel
+    updateCarrossel();
 });
