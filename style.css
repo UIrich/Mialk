@@ -775,11 +775,11 @@ textarea.form-control {
 }
 
 .carrossel-controle.prev {
-    left: -25px;
+    left: -2vw;
 }
 
 .carrossel-controle.next {
-    right: -25px;
+    right: -2vw;
 }
 
 .carrossel-indicadores {
@@ -925,13 +925,16 @@ textarea.form-control {
     
     
     .mascote-img {
-        max-width: 80%;
+        max-width: calc(100% - 10px);
         height: auto;
         margin: 0 auto;
+        display: block;
+
     }
     
     .mascote-imagem {
-        width: 80%;
+        width: 100%;
+        box-sizing: border-box;
     }
     
     .mascote-card {
@@ -945,11 +948,13 @@ textarea.form-control {
     }
     
     .carrossel-controle.prev {
-        left: -20px;
+        top: 25%;
+        left: -1.2vw;
     }
-    
+
     .carrossel-controle.next {
-        right: -20px;
+        top: 25%;
+        right: -1.2vw;
     }
 }
 
@@ -966,5 +971,11 @@ textarea.form-control {
         width: 35px;
         height: 35px;
         font-size: 1rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .carrossel-container {
+        max-width: 1170px; /* Limite máximo */
     }
 }
