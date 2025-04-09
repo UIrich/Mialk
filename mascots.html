@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mascotes - Mialk</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo-nav"><a href="index.html">MIALK</a></div>
+        
+        <button class="menu-toggle" aria-label="Menu">
+            <i class="material-icons">menu</i>
+        </button>
+        
+        <ul class="nav-links">
+            <li><a href="./about.html">Sobre Nós</a></li>
+            <li><a href="./mascots.html">Mascotes</a></li>
+            <li><a href="./contact.html">Contato</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="wave wave-top"></div>
+        <div class="hero-content">
+            <h2>NOSSOS MASCOTES</h2>
+            <p>Conheça os adoráveis personagens que representam a Mialk!</p>
+        </div>
+        <div class="wave wave-bottom"></div>
+    </section>
+    
+    <!-- Carrossel de Mascotes -->
+    <section class="produtos">
+        <div class="produtos-content">
+            <div class="mascotes-carrossel">
+                <!-- Controles do Carrossel -->
+                <button class="carrossel-controle prev" aria-label="Anterior">
+                    <i class="material-icons">chevron_left</i>
+                </button>
+                
+                <div class="carrossel-container">
+                    <!-- Item 1 - Mascote Morango -->
+                    <div class="carrossel-item active">
+                        <div class="mascote-info">
+                            <div class="mascote-card">
+                                <h3>Moranguinho</h3>
+                                <p>O otimista da equipe! Moranguinho é cheio de energia e adora espalhar alegria. Representa nossos produtos de morango.</p>
+                                <ul class="mascote-detalhes">
+                                    <li><strong>Idade:</strong> 5 anos</li>
+                                    <li><strong>Cor favorita:</strong> Rosa, claro!</li>
+                                    <li><strong>Hobby:</strong> Fazer novos amigos</li>
+                                </ul>
+                            </div>
+                            <div class="mascote-imagem">
+                                <img src="assets/morango.svg" alt="Moranguinho" class="mascote-img">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 2 - Mascote Cappuccino -->
+                    <div class="carrossel-item">
+                        <div class="mascote-info">
+                            <div class="mascote-card">
+                                <h3>Cafézinho</h3>
+                                <p>O sábio da turma. Cafézinho é tranquilo e sempre tem um conselho acolhedor. Representa nossa linha de cappuccino.</p>
+                                <ul class="mascote-detalhes">
+                                    <li><strong>Idade:</strong> 7 anos</li>
+                                    <li><strong>Cor favorita:</strong> Marrom aconchegante</li>
+                                    <li><strong>Hobby:</strong> Ler livros com cheirinho de café</li>
+                                </ul>
+                            </div>
+                            <div class="mascote-imagem">
+                                <img src="assets/cappuccino.svg" alt="Cafézinho" class="mascote-img">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 3 - Mascote Baunilha -->
+                    <div class="carrossel-item">
+                        <div class="mascote-info">
+                            <div class="mascote-card">
+                                <h3>Nuvem Doce</h3>
+                                <p>A sonhadora do grupo. Nuvem Doce é criativa e adora inventar novas receitas. Representa nossos produtos de baunilha.</p>
+                                <ul class="mascote-detalhes">
+                                    <li><strong>Idade:</strong> 6 anos</li>
+                                    <li><strong>Cor favorita:</strong> Azul celeste</li>
+                                    <li><strong>Hobby:</strong> Observar as nuvens</li>
+                                </ul>
+                            </div>
+                            <div class="mascote-imagem">
+                                <img src="assets/baunilha.svg" alt="Nuvem Doce" class="mascote-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="carrossel-controle next" aria-label="Próximo">
+                    <i class="material-icons">chevron_right</i>
+                </button>
+            </div>
+            
+            <!-- Indicadores -->
+            <div class="carrossel-indicadores">
+                <button class="indicador active" aria-label="Mostrar Moranguinho"></button>
+                <button class="indicador" aria-label="Mostrar Cafézinho"></button>
+                <button class="indicador" aria-label="Mostrar Nuvem Doce"></button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-wave"></div>
+        <div class="footer-content">
+            <p>© 2025 Mialk - Todos os direitos reservados</p>
+            <p>Feito com amor e fofura <i class="material-icons">favorite</i></p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

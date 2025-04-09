@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Mialk</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo-nav"><a href="index.html">MIALK</a></div>
+        
+        <button class="menu-toggle" aria-label="Menu">
+            <i class="material-icons">menu</i>
+        </button>
+        
+        <ul class="nav-links">
+            <li><a href="./about.html">Sobre Nós</a></li>
+            <li><a href="./mascots.html">Mascotes</a></li>
+            <li><a href="./contact.html" class="active">Contato</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="wave wave-top"></div>
+        <div class="hero-content">
+            <h2>FALE CONOSCO</h2>
+            <p>Estamos aqui para responder todas suas dúvidas com carinho!</p>
+        </div>
+        <div class="wave wave-bottom"></div>
+    </section>
+    
+    <!-- Conteúdo Contato -->
+    <section class="sobre-content">
+        <div class="missao">
+            <div class="sobre-texto">
+                <h3><i class="material-icons">chat_bubble</i> Nosso Contato</h3>
+                <p>Queremos ouvir você! Entre em contato por qualquer um dos meios abaixo ou preencha nosso formulário.</p>
+                
+                <div class="contato-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="material-icons">email</i>
+                        </div>
+                        <div class="info-text">
+                            <h4>Email</h4>
+                            <a href="mailto:contato@mialk.com.br">contato@mialk.com.br</a>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="material-icons">phone</i>
+                        </div>
+                        <div class="info-text">
+                            <h4>Telefone</h4>
+                            <a href="tel:+5511999999999">(11) 99999-9999</a>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="material-icons">location_on</i>
+                        </div>
+                        <div class="info-text">
+                            <h4>Endereço</h4>
+                            <p>Rua Prof. Orlando França de Carvalho, 325 - Centro <br>Bebedouro - SP</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="sobre-imagem">
+                <div class="form-container">
+                    <h3><i class="material-icons">edit</i> Formulário de Contato</h3>
+                    <form id="contatoForm">
+                        <div class="form-group">
+                            <label for="nome">Seu Nome</label>
+                            <input type="text" id="nome" name="nome" required class="form-control" placeholder="Como gosta de ser chamado(a)?">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Seu E-mail</label>
+                            <input type="email" id="email" name="email" required class="form-control" placeholder="seu@email.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="assunto">Assunto</label>
+                            <select id="assunto" name="assunto" class="form-control">
+                                <option value="duvida">Dúvida</option>
+                                <option value="sugestao">Reclamação</option>
+                                <option value="elogio">Sugestão</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="mensagem">Sua Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" rows="5" required class="form-control" placeholder="Escreva aqui com todo seu carinho..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="cta-button">
+                            <i class="material-icons">send</i> Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <div class="valores">
+            <h3><i class="material-icons">schedule</i> Horário de Atendimento</h3>
+            <div class="valores-grid">
+                <div class="valor-card">
+                    <i class="material-icons">calendar_today</i>
+                    <h4>Segunda a Sexta</h4>
+                    <p>9:00 às 18:00</p>
+                </div>
+                <div class="valor-card">
+                    <i class="material-icons">weekend</i>
+                    <h4>Sábados</h4>
+                    <p>9:00 às 14:00</p>
+                </div>
+                <div class="valor-card">
+                    <i class="material-icons">mood_bad</i>
+                    <h4>Domingos</h4>
+                    <p>Fechado para descansar</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-wave"></div>
+        <div class="footer-content">
+            <p>© 2025 Mialk - Todos os direitos reservados</p>
+            <p>Feito com amor e fofura <i class="material-icons">favorite</i></p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
