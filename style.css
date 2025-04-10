@@ -118,18 +118,6 @@ a:hover {
     color: var(--sky) !important;
 }
 
-.nav-cta-recicle:hover::after {
-    content: '!';
-    position: absolute;
-    animation: pulse 0.5s ease-in-out;
-}
-
-@keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.5); }
-    100% { transform: scale(1); }
-}
-
 /* Hero Section */
 .hero {
     background-color: var(--breeze); 
@@ -1032,6 +1020,10 @@ textarea.form-control {
         display: block;
     }
     
+    .logo-nav {
+        font-size: 2.5rem;
+    }
+
     .nav-links {
         position: fixed;
         top: 0;
@@ -1053,15 +1045,14 @@ textarea.form-control {
     
     .nav-links li {
         width: 100%;
-        margin: 10px 0;
     }
     
     .nav-links a {
-        padding: 12px 15px;
         width: 100%;
         display: flex;
         align-items: center;
-        gap: 10px;
+        max-width: max-content;
+        gap: 20px;
         border-radius: 8px;
     }
     
@@ -1101,10 +1092,7 @@ textarea.form-control {
         width: 80%;
     }
     
-    .logo-nav {
-        font-size: 2.5rem;
-    }
-    
+
     .hero h2 {
         font-size: 1.8rem;
     }
@@ -1192,7 +1180,6 @@ textarea.form-control {
     .nav-cta-recicle {
         margin-left: 0;
         margin-top: 15px;
-        max-width: 4rem;
     }
 
     .recycle-hero-icon {
