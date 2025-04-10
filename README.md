@@ -35,7 +35,7 @@ This is a project made for the Packaging Design and Brand Identity class about a
 
 * [![HTML5][HTML5]][HTML5-url]
 * [![CSS3][CSS3]][CSS3-url]
-* [![JavaScript][JavaScript-url]][JavaScript-url]
+* [![JavaScript][JavaScript]][JavaScript-url]
 
 ## Screenshots
 <img alt="Home" title="#Home" src="https://i.imgur.com/mHXdpZk.png"/>
