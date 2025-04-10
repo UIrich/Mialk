@@ -14,7 +14,7 @@
 </p>
 
 <h1 align="center">
-    <img alt="Mialk" title="#Mialk" src="https://i.imgur.com/20EqWlq.png"/>
+    <img alt="Mialk" title="#Mialk" src="https://i.imgur.com/n2HdXx6.png"/>
 </h1>
 
 <details>
